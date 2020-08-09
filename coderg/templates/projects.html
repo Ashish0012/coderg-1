@@ -43,10 +43,6 @@
         <div class="post-box">
             {% for project in projects %}
 
-            <br>
-            {{project.category.upper()}} {{category.upper()}}
-            <br>
-
             {% if project.category.upper() == category.upper() %}
 
             {% if cnt.append(cnt.pop()+1) %}{% endif %}
