@@ -42,7 +42,10 @@
         <hr class="hr-all">
         <div class="post-box">
             {% for project in projects %}
+            {#
             {% if project.category == category %}
+            #}
+            {{category}}{{project.category}}
 
             {% if cnt.append(cnt.pop()+1) %}{% endif %}
 
@@ -57,7 +60,7 @@
 
             &nbsp;
 
-            {% endif %}
+           {# {% endif %} #}
             {% endfor %}
 
 
